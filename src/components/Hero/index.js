@@ -1,9 +1,20 @@
-import React from 'react'
+import React from 'react';
+import Navbar from '../Navbar';
+import {HeroContainer, HeroContent, HeroItems, HeroH1, HeroP, HeroBtn} from './HeroElements'
 
 const Hero = () => {
     return (
         <div>
-            <h1>Hero</h1>
+            <HeroContainer>
+                <Navbar/>
+                <HeroContent>
+                    <HeroItems>
+                        <HeroH1>Greatest Pizza Ever</HeroH1>
+                        <HeroP>Ready In 60 Seconds</HeroP>
+                        <HeroBtn>Place Order</HeroBtn>
+                    </HeroItems>
+                </HeroContent>
+            </HeroContainer>
         </div>
     )
 }
